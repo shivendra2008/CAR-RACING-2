@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-image: url("racing.gif.gif");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+#reset_btn {
+	background-color: yellow;
+	font-size:20px;
+	font-weight:bold;
+	color:black;
+	margin:30px;
+}
+
+
+h1,h4
+{
+	color: white !important;
+}
+</style>		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Car Racing Game</title>
+</head>
+<body onload="add();">
+<center>
+<h1 style="font-weight: bolder; text-decoration: underline; text-decoration-color: turquoise;">Car Racing Game </h1>
+<h1> Game Status: <span id="game_status">  </span></h1>
+<canvas id="myCanvas" width="800" height="600">
+</canvas> 
+<div>
+	<button id="reset_btn" onclick="reset()"> Reset Race </button>
+</div>
+<h4>
+	<b class="text-danger">NOTE : </b> IF CARS ARE NOT VISIABLE PRESS ANY ARROW KEY.
+</h4>
+<textarea style="font-size: 20px; background-color: palevioletred; color:black; font-weight: bold; padding:5px;"> To move GREEN car : up, down, right and left arrows.  </textarea> 
+<textarea style="font-size: 20px; background-color: rgb(153, 255, 0); color:black; font-weight: bold; padding:5px;"> To move PINK car: u, d, r and l keys. </textarea>
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
